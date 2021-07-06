@@ -1,9 +1,9 @@
-const createHealthModule = require('./healthz');
+const createHealthModule = require('./healthz')
 
 function createModules() {
-    const healthModule = createHealthModule();
+    const healthModule = createHealthModule()
 
     return [healthModule]
 }
 
-module.exports = createModules;
+module.exports = createModules

@@ -1,15 +1,15 @@
 function createService() {
     const healthzCheck = async () => {
-        await sleep(2000);
+        await sleep(2000)
     }
 
     function sleep(ms) {
-        return new Promise(resolve => setTimeout(resolve, ms));
+        return new Promise((resolve) => setTimeout(resolve, ms))
     }
 
     return {
         healthzCheck,
-    };
+    }
 }
 
-module.exports = createService;
+module.exports = createService

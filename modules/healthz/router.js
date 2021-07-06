@@ -1,11 +1,11 @@
-const {Router} = require('express')
+const { Router } = require('express')
 
-function createRouter({controller}) {
-    const router = Router();
+function createRouter({ controller }) {
+    const router = Router()
 
-    router.get('/healthz', controller.healthzCheck);
+    router.get('/healthz', controller.healthzCheck)
 
-    return router;
+    return router
 }
 
-module.exports = createRouter;
+module.exports = createRouter

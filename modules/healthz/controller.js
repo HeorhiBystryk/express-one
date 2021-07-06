@@ -1,23 +1,17 @@
-// const { BadRequestException } = require("../../middleware/exception.handler");
-
 function createController({ service }) {
-    const healthzCheck = async (req, res, next) =>              {
+    const healthzCheck = async (req, res, next) => {
         try {
             await service.healthzCheck()
-            console.log();
-            // throw new BadRequestException('АЛЯРМА!')
+            console.log()
             return res.status(200).json('App is running...')
-
-
-
-        }              catch (error) {
+        } catch (error) {
             next(error)
         }
     }
 
     return {
         healthzCheck,
-    };
+    }
 }
 
-module.exports = createController;
+module.exports = createController

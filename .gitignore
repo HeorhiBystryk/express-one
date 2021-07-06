@@ -7,4 +7,3 @@
 .idea/
 node_modules/
 *.log
-.husky
