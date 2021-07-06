@@ -15,11 +15,12 @@ const createLoggerMiddleware = (req, res, next) => {
     function logRequestFinished(level) {
         return logger.log(
             level,
-            `TIME:${req.srvTriggerTime.toISOString()}; REQUEST ID:${
-                req.srvTraceId
-            }; REQUEST URL:${req.url} RESPONSE CODE: ${
-                res.statusCode
-            }; CLIENT IP: ${getClientIp()}; PROCESSING TIME: ${getProcessingTime()}ms`
+            `TIME:${req.srvTriggerTime.toISOString()}; 
+            REQUEST ID:${req.srvTraceId}; 
+            REQUEST URL:${req.url} 
+            RESPONSE CODE: ${res.statusCode}; 
+            CLIENT IP: ${getClientIp()}; 
+            PROCESSING TIME: ${getProcessingTime()}ms`
         )
     }
 
