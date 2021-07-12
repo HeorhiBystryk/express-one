@@ -5,6 +5,7 @@ function createController({ service }) {
 
 
 
+
             return res.status(200).json('App is running...')
         } catch (error) {
             next(error)
