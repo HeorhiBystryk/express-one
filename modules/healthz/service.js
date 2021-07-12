@@ -1,6 +1,7 @@
 function createService() {
     const healthzCheck = async () => {
         await sleep(2000)
+        return 'Service is ok...'
     }
 
     function sleep(ms) {
@@ -8,7 +9,7 @@ function createService() {
     }
 
     return {
-        healthzCheck,
+        healthzCheck
     }
 }
 
