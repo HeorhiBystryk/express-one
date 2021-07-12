@@ -4,6 +4,7 @@ const createService = require('./service')
 
 function createModule() {
     const service = createService()
+
     const controller = createController({ service })
     const router = createRouter({ controller })
 
